@@ -12,7 +12,7 @@ total_change = 0
 
 # %%
 # reference file being read
-csvpath = os.path.join("PyBank", "Resources", "budget_data.csv")
+csvpath = os.path.join("Resources", "budget_data.csv")
 
 
 # %%
@@ -55,14 +55,14 @@ with open(csvpath) as csvfile:
 print(f"Financial Analysis")
 print(f"----------------------------")
 print(f"Total Months: {total_months}")
-print(f"Total: {total}")
-print(f"Average Change: {round(average_change, 2)}")
+print(f"Total: ${total}")
+print(f"Average Change: ${round(average_change, 2)}")
 print(f"Greatest Increase in Profits: {month_greatest_increase} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {month_greatest_decrease} (${greatest_decrease})")
 
 # %%
 # define filepath for output text file
-output_path = os.path.join("PyBank", "analysis", "budget_data_analysis.txt")
+output_path = os.path.join("analysis", "budget_data_analysis.txt")
 
 # open in write mode
 with open(output_path, 'w') as f:
