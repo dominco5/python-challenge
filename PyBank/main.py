@@ -2,11 +2,6 @@
 import os
 import csv
 
-# create variables
-total_months = 0
-total = 0
-total_change = 0
-
 # reference file being read
 csvpath = os.path.join("Resources", "budget_data.csv")
 
@@ -54,7 +49,7 @@ with open(csvpath) as csvfile:
         previous_pl = int(row[1])
 
     # calculate average change
-    average_change = total_change / total_months
+    average_change = total_change / (total_months - 1)
 
 # print analysis of data
 print(f"Financial Analysis")

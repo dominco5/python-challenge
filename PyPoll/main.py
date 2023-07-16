@@ -3,7 +3,7 @@ import os
 import csv
 
 # define file path
-csvpath = os.path.join("PyPoll", "Resources", "election_data.csv")
+csvpath = os.path.join("Resources", "election_data.csv")
 
  # create variables
 total_votes = 0
@@ -66,7 +66,7 @@ for line in results:
     print(line)
 
 # set output file path
-output_path = os.path.join("PyPoll", "Analysis", "election_analysis.txt")
+output_path = os.path.join("analysis", "election_analysis.txt")
 
 # write to output file
 with open(output_path, 'w') as f:
