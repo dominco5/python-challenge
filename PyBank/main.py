@@ -45,8 +45,6 @@ with open(csvpath) as csvfile:
             greatest_decrease = difference
             month_greatest_decrease = row[0]
         
-        print(row[1], previous_pl, difference, total_change)
-        
         previous_pl = int(row[1])
 
     average_change = total_change / total_months
